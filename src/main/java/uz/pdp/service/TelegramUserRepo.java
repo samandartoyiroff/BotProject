@@ -12,7 +12,7 @@ import java.util.List;
 public class TelegramUserRepo implements Repository<TelegramUser> {
 
     public static List<TelegramUser> USERS;
-    public static String PATH="src/main/java/uz/pdp/files/user.txt";
+    public static String PATH="user.txt";
     public static TelegramUserRepo telegramUserRepo;
 
     public TelegramUserRepo(List<TelegramUser> USERS) {

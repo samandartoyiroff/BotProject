@@ -9,7 +9,8 @@ public class TelegramUser implements Serializable {
     private String name;
     private Long chatId;
     private String chatLang;
-    private Status status=Status.LANGUAGE;
+    private String phoneNumber;
+    private Status status = Status.START;
 
     public TelegramUser() {
     }
@@ -48,5 +49,13 @@ public class TelegramUser implements Serializable {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }
